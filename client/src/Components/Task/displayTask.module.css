@@ -1,0 +1,65 @@
+.listItem {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 95%;
+    background-color: rgb(88, 88, 86);
+    color: white;
+    padding: 7px;
+    border-radius: 15px;
+    height: auto;
+    cursor: pointer;
+    text-align: left;
+    align-content: center;
+}
+.listItem span {
+    width: 80%;
+    height: 100%;
+    font: inherit;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+h4 {
+    color: white;
+    margin: 0 auto;
+}
+
+.line_through {
+    text-decoration: line-through;
+    background-color: rgb(131, 131, 131);
+}
+.p {
+    color: blanchedalmond;
+}
+.checkIcon {
+    color: rgb(250, 248, 248);
+    font-size: 20px;
+    margin: 2px 20px 2px 10px;
+}
+.deleteIcon {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 2px 10px 2px 10px;
+}
+.delButton {
+    cursor: pointer;
+    font: inherit;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 20px;
+    padding: 0.25rem 2rem;
+    margin: 1rem 0.5rem;
+}
+.delMessage {
+    padding-right: 5px;
+}
+.delModal {
+    text-align: center;
+}
+@media only screen and (max-width: 700px) {
+    .delButton {
+        padding: 0.25rem 0.4rem;
+    }
+}

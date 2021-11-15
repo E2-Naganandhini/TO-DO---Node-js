@@ -1,0 +1,83 @@
+.collection {
+    width: 70%;
+    height: 480px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.NotificationMsg {
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+.collection li {
+    display: flex;
+    list-style: none;
+    flex: 0 0 30%;
+    margin: 10px;
+    margin-left: 30px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(8, 8, 8);
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(199, 36, 36);
+}
+
+.collection a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(168, 167, 167);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6d6a6a;
+}
+
+.collection li:nth-child(5n + 1) {
+    background-color: #f8d671;
+}
+
+.collection li:nth-child(5n + 2) {
+    background-color: #ff718b;
+}
+
+.collection li:nth-child(5n + 3) {
+    background-color: #33e4d2;
+}
+
+.collection li:nth-child(5n + 4) {
+    background-color: #b477ff;
+}
+
+.collection li:nth-child(5n + 5) {
+    background-color: #73ee8d;
+}
+
+@media only screen and (max-width: 700px) {
+    .collection {
+        width: 95%;
+        height: 80vh;
+    }
+    .collection li {
+        flex: 0 0 70%;
+        margin-left: 10px;
+    }
+}

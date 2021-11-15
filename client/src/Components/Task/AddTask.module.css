@@ -1,0 +1,77 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 80vh;
+    border-radius: 20px;
+    padding: 10px 20px;
+    padding-left: 50px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.container h2 {
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.InputErrorMsg {
+    color: red;
+}
+.container h2 .backIcon {
+    cursor: pointer;
+    margin-right: 10px;
+    color: white;
+
+    margin-top: 6px;
+}
+.container input {
+    width: 90%;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 3px;
+    padding-left: 30px;
+    border: 1px solid rgb(161, 161, 161);
+    background-color: #424242;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    color: white;
+}
+
+.container .list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
+}
+.NotificationMsg {
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.list h4 {
+    margin: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+    .container .list {
+        height: 430px;
+    }
+    .container h2 {
+        padding-top: 5px;
+    }
+}

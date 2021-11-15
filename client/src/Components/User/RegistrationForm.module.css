@@ -1,0 +1,172 @@
+.container h1 {
+    color: white;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.formBox .successMsg {
+    width: 70%;
+    border: 1px solid white;
+    padding: 20px;
+    background-color: rgb(255, 253, 253);
+    color: rgb(14, 13, 13);
+    text-align: center;
+    margin: 0 auto;
+}
+section .imageBox {
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+section .imageBox:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, rgb(121, 120, 120), rgb(65, 61, 61));
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+section .imageBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .contentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+section .contentBox .formBox {
+    width: 70%;
+}
+
+section .contentBox .formBox h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1.5px;
+}
+
+section .contentBox .formBox .inputBox {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+section .contentBox .formBox .inputBox p {
+    color: rgb(230, 77, 77);
+    font-weight: bold;
+    margin-left: 30%;
+    font-size: small;
+}
+
+section .contentBox .formBox .inputBox span {
+    font-size: 16px;
+    color: rgb(247, 247, 247);
+    font-weight: 300;
+    font-size: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    width: 27%;
+}
+
+section .contentBox .formBox .inputBox input {
+    padding: 7px 10px;
+    width: 60%;
+    outline: none;
+    font-weight: 400;
+    color: black;
+    font: inherit;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: rgb(224, 223, 223);
+    border: 1px solid rgb(248, 246, 246);
+    border-radius: 20px;
+}
+section .contentBox .formBox .submitBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .contentBox .formBox .submitBox button {
+    background-color: rgb(236, 176, 176);
+    color: rgb(255, 253, 253);
+    padding: 7px 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40%;
+    font: inherit;
+    border-radius: 20px;
+}
+
+section .contentBox .formBox .submitBox button:disabled {
+    background-color: rgb(199, 167, 167);
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+section .contentBox .formBox .submitBox input:hover {
+    background-color: rgb(243, 202, 202);
+}
+
+section .contentBox .formBox .submitBox p {
+    color: rgb(255, 255, 255);
+}
+
+section .contentBox .formBox .submitBox a {
+    color: rgb(236, 176, 176);
+}
+
+@media (max-width: 912px) {
+    section .imageBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .formBox {
+        width: 100%;
+        padding: 40px;
+        background-color: #424242;
+        margin: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    section .formBox {
+        width: 100%;
+        padding: 20px;
+    }
+    section .contentBox .formBox .inputBox input {
+        width: 90%;
+    }
+}

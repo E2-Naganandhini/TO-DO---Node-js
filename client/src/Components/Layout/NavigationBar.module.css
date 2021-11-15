@@ -1,0 +1,231 @@
+.header {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(85, 73, 73, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.sidetitle {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-right: 1.5rem;
+}
+.secondsidetitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+.title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 2500;
+    margin-left: 20px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.nav li {
+    font-size: 1rem;
+    color: white;
+}
+
+.nav input {
+    margin-right: 10px;
+    padding-left: 6px;
+    border: 1px solid rgb(83, 81, 81);
+    height: 23px;
+    background-color: rgb(37, 37, 37);
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+    color: rgb(236, 176, 176);
+}
+
+.addCollBtn {
+    font: inherit;
+    background-color: rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+    border: 0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.addCollBtn:hover,
+.addCollBtn:active,
+.addCollBtn.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.collIcon {
+    color: white;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.menu_bars {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    margin-top: 100px;
+    padding-top: 10px;
+}
+
+.nav_menu {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    left: 0;
+    transition: 850ms;
+}
+
+.active {
+    left: -100%;
+}
+
+.nav_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    list-style: none;
+    height: 40px;
+    margin: 0px;
+}
+
+.nav_text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.nav_text a:hover {
+    background-color: rgb(99, 96, 96);
+}
+
+.nav_menu_items {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav_menu_items li:nth-child(1) {
+    margin-top: 10px;
+}
+
+.nav_toggle {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span {
+    margin-right: 16px;
+}
+.nav_sub_menu_items {
+    height: 440px;
+    overflow-y: auto;
+}
+
+.addCollIcon {
+    color: rgb(236, 176, 176);
+    font-size: 30px;
+    cursor: pointer;
+}
+.searchIcon {
+    color: white;
+    font-size: 21px;
+    margin: 0 10px;
+
+    cursor: pointer;
+    margin-top: 7px;
+}
+.collTitle {
+    margin-right: 10px;
+}
+.nav_sub_menu_items .nav_text {
+    margin-top: 0px;
+    padding: 5px;
+}
+.miniAddCollIcon {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 17px;
+    }
+    .collIcon {
+        font-size: 15px;
+    }
+    .searchIcon {
+        display: none;
+    }
+    .collTitle a {
+        font-size: 15px;
+        margin-right: 18px;
+    }
+    .nav_menu {
+        left: -100%;
+    }
+
+    .active {
+        left: 0;
+        transition: 350ms;
+    }
+    .secondsidetitle .addCollIcon {
+        display: none;
+    }
+
+    .miniAddCollIcon {
+        display: block;
+        position: fixed;
+        width: 100px;
+        bottom: 0px;
+        margin-bottom: 20px;
+        left: 45%;
+    }
+    .miniAddCollIcon .addCollIcon {
+        font-size: 60px;
+    }
+}
