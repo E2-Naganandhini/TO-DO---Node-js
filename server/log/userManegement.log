@@ -1,0 +1,8 @@
+[2021-11-10T10:51:14.774] [ERROR] userManagement - Error occured while updating user:  ReferenceError: user is not defined
+    at Object.registerUser (E:\sample-node-seq\server\DAO\userManagementDAO.js:12:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async registerAccount (E:\sample-node-seq\server\service\userManagement.js:13:29)
+[2021-11-10T10:51:14.777] [ERROR] error - Error occured while updating user:  ReferenceError: user is not defined
+    at Object.registerUser (E:\sample-node-seq\server\DAO\userManagementDAO.js:12:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async registerAccount (E:\sample-node-seq\server\service\userManagement.js:13:29)
